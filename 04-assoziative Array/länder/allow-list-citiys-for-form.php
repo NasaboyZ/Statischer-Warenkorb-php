@@ -32,4 +32,5 @@
         'sofia' => 'Sofia (Bulgarien)',
         'ankara' => 'Ankara (Türkei)'
     ];
+    ksort($cities) // das soritiert unsere stäte wahl alpahbetisch
 ?>
