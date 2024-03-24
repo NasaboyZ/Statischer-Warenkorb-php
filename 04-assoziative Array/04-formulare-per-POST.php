@@ -8,13 +8,11 @@
 <body>
     <pre>
         <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            var_dump($_POST);
-        }
+        var_dump($_POST)
         ?>
     </pre>
     
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+    <form action="04-formulare-per-POST.php" method="POST">
         <input type="text" name="firstname" value="<?php echo isset($_POST['firstname']) ? htmlspecialchars($_POST['firstname']) : ''; ?>" />
         <input type="text" name="lastname" value="<?php echo isset($_POST['lastname']) ? htmlspecialchars($_POST['lastname']) : ''; ?>" />
         <input type="password" name="password" placeholder="Password" />
