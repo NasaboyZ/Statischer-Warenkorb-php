@@ -19,7 +19,19 @@
         <input type ="Submit" value ="Abschicken!"/>
     </form>
 
-    
+    <hr/>
+     
+    <!-- allow list -->
 
+    $cities =[
+        'budapest',
+        'helsinki',
+        'london'
+        ];
+    <?php 
+    if(!empty($_GET) && in_array($_GET['city'],$cities)){
+    include "text/{$_GET['city']}.html";
+    }
+    ?>
 </body>
 </html>
