@@ -8,7 +8,7 @@
 <body>
     <pre>
         <?php
-        echo $a = 'hallo welt';
+        echo $a = 'hallo welt'; 
         $handle = opendir(__DIR__.'/img');
         while(($filename = readdir($handel))!== false){ //in der zweiten klammer fassen wir was zusammen also diese zuweisung  da kommt also ein ergbnis raus und kommt direkt in die variable filename und dieses ergnenis in der variable können wir weiter verarbeiten und vergleichen
             if($filename === '.'|| $filename === '..') continue;
